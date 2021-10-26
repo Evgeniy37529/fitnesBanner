@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+
+    font-family: 'SFProDisplay';
+    
+    src: url('../css/fonts/SFProDisplay-Medium.eot');
+    
+    src: url('../css/fonts/SFProDisplay-Medium.eot') format('eot'),
+    
+    url('../css/fonts/SFProDisplay-Medium.woff') format('woff');
+    
+    
+    font-weight: normal;
+    
+    font-style: normal;
+    
+    }
+    @font-face{
+
+        font-family: 'SFProText';
+        
+        src: url('../css/fonts/FontsFree-Net-SFProText-Regular.ttf');
+        
+        src: url('../css/fonts/FontsFree-Net-SFProText-Regular.ttf') format('ttf'),
+        
+        url('../css/fonts/SFProDisplay-Medium.woff') format('woff');
+        
+        
+        font-weight: normal;
+        
+        font-style: normal;
+        
+        }
+   
+    button{
+        cursor: pointer;
+    }
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 416px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.verv{
+    position: relative;
+    width: 100%;
+    padding-bottom: 116.61px;
+    background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%) ;
+    /* background-image: ; */
+}
+.red{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+.close-btn{
+    display: block;
+    position: absolute;
+    width: 32px;
+    height:32px;
+    background: #fff;
+   top: 48px;
+   right: 12px;
+   text-align: center;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.girl{
+    position: absolute;
+    left:43%;
+    top: 24%;
+    z-index: 10;
+}
+.line1{
+    position: absolute;
+    left:0%;
+    top: 33%;
+}
+.line2{
+    position: absolute;
+    left:0%;
+    top: 33%;
+}
+.banner-title{
+    padding-top: 80.39px;
+    padding-bottom: 33px;
+    font:34px/41px 'SFProDisplay';
+    letter-spacing: 1.37px;
+    text-align: center;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav{
+    /* box-shadow: inset 3px 0px 10px rgba(32, 55, 119, 0.63), inset 3 0 10px rgba(32, 55, 119, 0.63); */
+    /* box-shadow: 3px 3px rgba(32, 55, 119, 0.63), -1em 0 .4em rgba(32, 55, 119, 0.63); */
+    
+}
+.nav-list{
+    list-style: none;
+  border-bottom: 1px solid rgba(32, 55, 119, 0.63);
+}
+.nav-list-item{
+    padding: 16px 0 15px 33px;
+    border-top: 1px solid rgba(32, 55, 119, 0.63);
+    /* border-bottom: 1px solid rgba(32, 55, 119, 0.63); */
+}
+.link-item{
+    font:13px/14px 'SFProDisplay';
+    color:#fff;
+    position: relative;
+    z-index: 10;
+}
+
+.link-item:hover{
+    color: #1A1A1A;
+}
+.slider-banner{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slider-banner-container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide{
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    max-width: 333px;
+    /* padding: 20px 20px 24px 20px; */
+    padding: 6% 4% 6% 6%;
+    margin-right:5px;
+    background: #F3F2F9;
+backdrop-filter: blur(9.06094px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 10px;
+transition: transform 0.5s ease-in-out;
+}
+
+.header-slide{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.slide-title{
+    font: bold 15px/18px 'SFProText';
+    color: #1A1A1A;
+}
+.name{
+    font:15px/18px 'SFProText';
+    color: #1A1A1A;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.raiting{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.buttons{
+    display: flex;
+    justify-content:space-between;
+    width: 90%;
+    display: flex;
+    margin-top: 100px;
+}
+
+
+.container-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 32%;
+    align-items: center;
+    /* padding: 6px 11px 35px 11px; */
+    border: none;
+    border-radius: 5px;
+    background: #F3F2F9;
+    backdrop-filter: blur(9.06094px);
+    color: #000;
+}
+/* .btn:not(:last-child){
+    margin-right: 10px;
+} */
+
+.oneBtn{
+    align-self: flex-end;
+}
+.active{
+    color: #fff;
+    background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%) ;
+}
+.button-title{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font: bold 24px/16px 'SFProDisplay';
+    letter-spacing: 1.78px;
+}
+.button-title span{
+    font: bold 16px/28px 'SFProDisplay';
+}
+.cost-month{
+    margin-bottom: 6px;
+    font:  13px/16px 'SFProDisplay';
+    letter-spacing: -0.354546px;
+}
+.btn-header-title{
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+    font: bold 13px/25px 'SFProDisplay';
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+    background: #FCBF59;
+backdrop-filter: blur(9.06094px);
+}
+.header-90{
+    background: #FCA759;
+}
+.btn-title-footer{
+    border-radius: 0px 0px 5px 5px;
+    font: bold 9px/15px 'SFProDisplay';
+    width: 100%;
+    letter-spacing: 1.54px;
+    text-transform: uppercase;
+    background: #FCA759;
+    backdrop-filter: blur(9.06094px);
+}
+.link-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.description{
+    padding: 6px 18px 26px;
+}
+
+.description-last{
+    padding-bottom: 11px;
+}
+    
+.continue-btn{
+    display: block;
+    width: 90%;
+    margin-top: 30px;
+    padding: 11px 0px;
+    background: linear-gradient(225deg, #542285 0%, #222266 100%);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font:  22px/28px 'SFProDisplay';
+    text-align: center;
+    letter-spacing: 2.0352px;
+}
+.footer{
+    
+    margin-top: 20px;
+   
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-text{
+    color: #000000;
+    font:  12px/15px 'SFProText';
+    text-align: center; 
+    mix-blend-mode: normal;
+    opacity: 0.4;
+}
+.line{
+    width: 135px;
+    height: 5px;
+    margin-top: 26px;
+    margin-bottom: 8px;
+    border-radius: 100px;
+    background: #000;
+}
+
+
+
+.star{cursor: pointer;}
